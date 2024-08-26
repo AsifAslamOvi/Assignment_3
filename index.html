@@ -37,6 +37,11 @@
         .font_manrope{
             font-family: "Manrope", sans-serif;
         }
+
+        /* Customize the thickness of the dropdown icon lines */
+        .custom-dropdown-icon svg {
+            stroke-width: 3; /* Adjust the stroke-width for thicker icon lines */
+        }
       </style>
 </head>
 <body class="font_manrope">
@@ -44,14 +49,19 @@
         <nav>
             <div class="navbar justify-between">
                 <div class="navbar-start">
-                <div class="bg-[#ABEF5F] rounded-full px-2 py-1">
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    <div class="bg-[#ABEF5F] rounded-full px-2 py-1">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl font-bold">Rinterio</a>
                 </div>
-                    <a class="btn btn-ghost normal-case text-xl font-bold drop ">Rinterio</a>
-                  
-                    <div class="dropdown ml-auto lg:ml-0">
-                      <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+
+                <!-- Dropdown for small screens -->
+                <div class="navbar-end flex lg:hidden">
+                    <div class="dropdown dropdown-end">
+                      <label tabindex="0" class="btn btn-ghost bg-white px-3 py-2 rounded-full custom-dropdown-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                       </label>
                       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#737373]">
                           <li class="font-bold text-black"><a>Home</a></li>
@@ -65,6 +75,8 @@
                       </ul>
                     </div>
                 </div>
+
+                <!-- Center menu for large screens -->
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-[#737373]">
                     <li class="font-bold text-black"><a>Home</a></li>
@@ -74,6 +86,8 @@
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
+
+                <!-- End buttons for large screens -->
                 <div class="navbar-end gap-4 hidden lg:flex">
                     <i class="fa-solid fa-magnifying-glass px-2 py-2 bg-white rounded-full"></i>
                     <i class="fa-solid fa-cart-shopping px-2 py-2 bg-white rounded-full"></i>
