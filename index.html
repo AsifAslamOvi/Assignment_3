@@ -45,7 +45,7 @@
       </style>
 </head>
 <body class="font_manrope">
-    <header class="bg-gradient-to-b from-gray-200 to-white h-screen lg:px-28">
+    <header class="bg-gradient-to-b from-gray-200 to-white pb-20 lg:px-28">
         <nav>
             <div class="navbar justify-between">
                 <div class="navbar-start">
@@ -116,7 +116,57 @@
         </div>
     </header>
 
-    <main>
+    <main class="bg-gray-100 h-full px-6 lg:px-24">
+      <!-- Rotated scribble image -->
+      <img class="hidden lg:block rotate-[40deg] transform -scale-y-100 w-16 lg:w-20 -mb-4 mx-auto lg:mx-0" src="./assets/scribble-broken-line.png" alt="">
+    
+      <!-- Flex container to equally divide space -->
+      <div class="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0 lg:space-x-12 pb-24">
+    
+        <!-- Left side written part -->
+        <div class="flex-1 text-center lg:text-left pt-4 lg:pt-0">
+          <button class="bg-white rounded-full px-4 py-2 font-bold mx-auto lg:mx-0">
+            <i class="fa-solid fa-arrow-right"></i> About Us
+          </button>
+          <h1 class="text-2xl lg:text-5xl mt-4 font-extrabold">
+            We design thoughtful, liveable spaces
+          </h1>
+          <p class="font-semibold py-4 text-sm lg:text-base">
+            The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+    
+          <div>
+            <!-- Commercial -->
+            <div class="bg-white py-4 px-4 rounded-md flex flex-col lg:flex-row items-start lg:items-center gap-4">
+              <img class="w-16 lg:w-auto" src="./assets/commercial.png" alt="">
+              <div class="text-left">
+                <h1 class="font-extrabold text-lg">Commercial</h1>
+                <p class="font-bold text-gray-500">
+                  The barn house captivates with its blend of rustic charm and modern.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Residential -->
+            <div class="bg-white py-4 px-4 rounded-md flex flex-col lg:flex-row items-start lg:items-center gap-4 mt-6">
+              <img class="w-16 lg:w-auto" src="./assets/residential.png" alt="">
+              <div class="text-left">
+                <h1 class="font-extrabold text-lg">Residential</h1>
+                <p class="font-bold text-gray-500">
+                  The barn house captivates with its blend of rustic charm and modern.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Image part -->
+        <div class="flex-1 mt-6 lg:mt-0">
+          <img class="w-full" src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
     </main>
+    
 </body>
 </html>
