@@ -116,15 +116,15 @@
         </div>
     </header>
 
-    <main class="bg-gray-100 h-full px-6 lg:px-24">
+    <main class="bg-gray-100 h-full px-6 lg:px-24 pt-8">
       <!-- Rotated scribble image -->
-      <img class="hidden lg:block rotate-[40deg] transform -scale-y-100 w-16 lg:w-20 -mb-4 mx-auto lg:mx-0" src="./assets/scribble-broken-line.png" alt="">
+      <img class="hidden lg:block transform w-16 lg:w-20 -mb-4 mx-auto lg:mx-0 pb-4" src="./assets/Vector.png" alt="">
     
       <!-- Flex container to equally divide space -->
       <div class="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0 lg:space-x-12 pb-24">
-    
+      
         <!-- Left side written part -->
-        <div class="flex-1 text-center lg:text-left pt-4 lg:pt-0">
+        <div class="flex-1 text-center lg:text-left">
           <button class="bg-white rounded-full px-4 py-2 font-bold mx-auto lg:mx-0">
             <i class="fa-solid fa-arrow-right"></i> About Us
           </button>
@@ -162,11 +162,50 @@
         </div>
     
         <!-- Image part -->
-        <div class="flex-1 mt-6 lg:mt-0">
-          <img class="w-full" src="./assets/Rectangle.png" alt="">
+        <div class="flex-1 lg:max-w-lg lg:ml-auto pt-4">
+          <img class="w-full rounded-lg" src="./assets/Rectangle.png" alt="">
         </div>
       </div>
+
+      <!-- Client part -->
+      <section class="bg-gray-100 pb-12">
+        <div class="container mx-auto bg-white rounded-3xl px-12 py-10">
+          <div class="flex flex-col lg:flex-row justify-between items-center text-center space-y-8 lg:space-y-0 lg:space-x-8">
+      
+            <!-- Item 1 -->
+            <div class="flex flex-col items-center">
+              <img src="./assets/message.png" alt="Happy Client Review" class="w-10 mb-2">
+              <h1 class="text-4xl font-extrabold">235+</h1>
+              <p class="font-semibold text-gray-500">Happy Client Review</p>
+            </div>
+      
+            <!-- Item 2 -->
+            <div class="flex flex-col items-center">
+              <img src="./assets/department.png" alt="Work Departments" class="w-10 mb-2">
+              <h1 class="text-4xl font-extrabold">50+</h1>
+              <p class="font-semibold text-gray-500">Work Departments</p>
+            </div>
+      
+            <!-- Item 3 -->
+            <div class="flex flex-col items-center">
+              <img src="./assets/customers.png" alt="Our Happy Client" class="w-10 mb-2">
+              <h1 class="text-4xl font-extrabold">30k+</h1>
+              <p class="font-semibold text-gray-500">Our Happy Client</p>
+            </div>
+      
+            <!-- Item 4 -->
+            <div class="flex flex-col items-center">
+              <img src="./assets/users-avatar.png" alt="Staff Members" class="w-10 mb-2">
+              <h1 class="text-4xl font-extrabold">307+</h1>
+              <p class="font-semibold text-gray-500">Staff Members</p>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
     </main>
+    
     
 </body>
 </html>
